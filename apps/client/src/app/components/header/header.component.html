@@ -58,6 +58,16 @@
           >Accounts</a
         >
       </li>
+      <li class="list-inline-item">
+        <a
+          class="d-none d-sm-block"
+          mat-flat-button
+          href="/agent"
+          target="_blank"
+          style="color: #36cfb4;"
+          >Agent</a
+        >
+      </li>
       @if (hasPermissionToAccessAdminControl) {
         <li class="list-inline-item">
           <a
@@ -275,6 +285,13 @@
             }"
             [routerLink]="routerLinkAccount"
             >My Ghostfolio</a
+          >
+          <a
+            mat-menu-item
+            href="/agent"
+            target="_blank"
+            style="color: #36cfb4;"
+            >Agent</a
           >
           @if (hasPermissionToAccessAdminControl) {
             <a
