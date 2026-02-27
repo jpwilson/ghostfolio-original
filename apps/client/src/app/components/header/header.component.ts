@@ -131,6 +131,14 @@ export class GfHeaderComponent implements OnChanges {
   public routerLinkRegister = publicRoutes.register.routerLink;
   public routerLinkResources = publicRoutes.resources.routerLink;
 
+  public get agentUrl(): string {
+    const host = window.location.hostname;
+    if (host.includes('ghostfoliojpgauntlet-production')) {
+      return 'https://agent-folio-production.up.railway.app';
+    }
+    return 'http://localhost:8000';
+  }
+
   private unsubscribeSubject = new Subject<void>();
 
   public constructor(
