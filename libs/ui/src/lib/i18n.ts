@@ -60,6 +60,9 @@ const locales = {
   PRECIOUS_METAL: $localize`Precious Metal`,
   PRIVATE_EQUITY: $localize`Private Equity`,
   STOCK: $localize`Stock`,
+  RENTAL_PROPERTY: $localize`Rental Property`,
+  COMMERCIAL_PROPERTY: $localize`Commercial Property`,
+  SMALL_BUSINESS: $localize`Small Business`,
 
   // Benchmark
   ALL_TIME_HIGH: 'All time high',
